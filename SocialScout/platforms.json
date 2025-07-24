@@ -1,0 +1,1689 @@
+{
+  "Twitter": {
+    "url_pattern": "https://twitter.com/{username}",
+    "category": "social_media",
+    "checker_type": "social_media",
+    "method": "GET",
+    "not_found_indicators": ["this account doesn't exist", "user not found"],
+    "domains": ["twitter.com", "x.com"]
+  },
+  "Instagram": {
+    "url_pattern": "https://www.instagram.com/{username}/",
+    "category": "social_media",
+    "checker_type": "social_media",
+    "method": "GET",
+    "not_found_indicators": ["sorry, this page isn't available"],
+    "domains": ["instagram.com"]
+  },
+  "Facebook": {
+    "url_pattern": "https://www.facebook.com/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["facebook.com"]
+  },
+  "TikTok": {
+    "url_pattern": "https://www.tiktok.com/@{username}",
+    "category": "social_media",
+    "checker_type": "social_media",
+    "method": "GET",
+    "not_found_indicators": ["couldn't find this account"],
+    "domains": ["tiktok.com"]
+  },
+  "YouTube": {
+    "url_pattern": "https://www.youtube.com/c/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["youtube.com"]
+  },
+  "LinkedIn": {
+    "url_pattern": "https://www.linkedin.com/in/{username}",
+    "category": "professional",
+    "checker_type": "redirect",
+    "method": "GET",
+    "redirect_indicators": ["/login", "/signup"],
+    "domains": ["linkedin.com"]
+  },
+  "GitHub": {
+    "url_pattern": "https://github.com/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["github.com"]
+  },
+  "GitLab": {
+    "url_pattern": "https://gitlab.com/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["gitlab.com"]
+  },
+  "Bitbucket": {
+    "url_pattern": "https://bitbucket.org/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["bitbucket.org"]
+  },
+  "StackOverflow": {
+    "url_pattern": "https://stackoverflow.com/users/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["stackoverflow.com"]
+  },
+  "CodePen": {
+    "url_pattern": "https://codepen.io/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["codepen.io"]
+  },
+  "Replit": {
+    "url_pattern": "https://replit.com/@{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["replit.com"]
+  },
+  "Reddit": {
+    "url_pattern": "https://www.reddit.com/user/{username}",
+    "category": "forums",
+    "checker_type": "profile",
+    "method": "GET",
+    "not_found_indicators": ["user not found", "page not found"],
+    "domains": ["reddit.com"]
+  },
+  "Medium": {
+    "url_pattern": "https://medium.com/@{username}",
+    "category": "forums",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["medium.com"]
+  },
+  "DevTo": {
+    "url_pattern": "https://dev.to/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["dev.to"]
+  },
+  "HackerNews": {
+    "url_pattern": "https://news.ycombinator.com/user?id={username}",
+    "category": "forums",
+    "checker_type": "profile",
+    "method": "GET",
+    "not_found_indicators": ["no such user"],
+    "domains": ["news.ycombinator.com"]
+  },
+  "Discord": {
+    "url_pattern": "https://discord.com/users/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["discord.com"]
+  },
+  "Twitch": {
+    "url_pattern": "https://www.twitch.tv/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["twitch.tv"]
+  },
+  "Steam": {
+    "url_pattern": "https://steamcommunity.com/id/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["steamcommunity.com"]
+  },
+  "Xbox": {
+    "url_pattern": "https://account.xbox.com/en-us/profile?gamertag={username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["xbox.com"]
+  },
+  "PlayStation": {
+    "url_pattern": "https://psnprofiles.com/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["psnprofiles.com"]
+  },
+  "EpicGames": {
+    "url_pattern": "https://www.epicgames.com/account/personal?productName=epicgames&searchText={username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["epicgames.com"]
+  },
+  "Behance": {
+    "url_pattern": "https://www.behance.net/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["behance.net"]
+  },
+  "Dribbble": {
+    "url_pattern": "https://dribbble.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["dribbble.com"]
+  },
+  "DeviantArt": {
+    "url_pattern": "https://www.deviantart.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["deviantart.com"]
+  },
+  "Flickr": {
+    "url_pattern": "https://www.flickr.com/people/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["flickr.com"]
+  },
+  "Pinterest": {
+    "url_pattern": "https://www.pinterest.com/{username}/",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["pinterest.com"]
+  },
+  "AngelList": {
+    "url_pattern": "https://angel.co/u/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["angel.co"]
+  },
+  "Crunchbase": {
+    "url_pattern": "https://www.crunchbase.com/person/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["crunchbase.com"]
+  },
+  "AboutMe": {
+    "url_pattern": "https://about.me/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["about.me"]
+  },
+  "Snapchat": {
+    "url_pattern": "https://www.snapchat.com/add/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["snapchat.com"]
+  },
+  "Telegram": {
+    "url_pattern": "https://t.me/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["t.me"]
+  },
+  "WhatsApp": {
+    "url_pattern": "https://wa.me/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["wa.me"]
+  },
+  "Spotify": {
+    "url_pattern": "https://open.spotify.com/user/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["spotify.com"]
+  },
+  "SoundCloud": {
+    "url_pattern": "https://soundcloud.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["soundcloud.com"]
+  },
+  "Bandcamp": {
+    "url_pattern": "https://{username}.bandcamp.com",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["bandcamp.com"]
+  },
+  "Tumblr": {
+    "url_pattern": "https://{username}.tumblr.com",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["tumblr.com"]
+  },
+  "WordPress": {
+    "url_pattern": "https://{username}.wordpress.com",
+    "category": "forums",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["wordpress.com"]
+  },
+  "Blogger": {
+    "url_pattern": "https://{username}.blogspot.com",
+    "category": "forums",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["blogspot.com"]
+  },
+  "Skype": {
+    "url_pattern": "skype:{username}?userinfo",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["skype.com"]
+  },
+  "Zoom": {
+    "url_pattern": "https://zoom.us/profile/{username}",
+    "category": "professional",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["zoom.us"]
+  },
+  "Slack": {
+    "url_pattern": "https://{username}.slack.com",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["slack.com"]
+  },
+  "Venmo": {
+    "url_pattern": "https://venmo.com/{username}",
+    "category": "financial",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["venmo.com"]
+  },
+  "CashApp": {
+    "url_pattern": "https://cash.app/${username}",
+    "category": "financial",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["cash.app"]
+  },
+  "Patreon": {
+    "url_pattern": "https://www.patreon.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["patreon.com"]
+  },
+  "Etsy": {
+    "url_pattern": "https://www.etsy.com/people/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["etsy.com"]
+  },
+  "eBay": {
+    "url_pattern": "https://www.ebay.com/usr/{username}",
+    "category": "marketplace",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["ebay.com"]
+  },
+  "Amazon": {
+    "url_pattern": "https://www.amazon.com/gp/profile/amzn1.account.{username}",
+    "category": "marketplace",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["amazon.com"]
+  },
+  "Vimeo": {
+    "url_pattern": "https://vimeo.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["vimeo.com"]
+  },
+  "DailyMotion": {
+    "url_pattern": "https://www.dailymotion.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["dailymotion.com"]
+  },
+  "Metacafe": {
+    "url_pattern": "https://www.metacafe.com/channels/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["metacafe.com"]
+  },
+  "Minds": {
+    "url_pattern": "https://www.minds.com/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["minds.com"]
+  },
+  "Gab": {
+    "url_pattern": "https://gab.com/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["gab.com"]
+  },
+  "Parler": {
+    "url_pattern": "https://parler.com/profile/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["parler.com"]
+  },
+  "MeWe": {
+    "url_pattern": "https://mewe.com/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["mewe.com"]
+  },
+  "Mastodon": {
+    "url_pattern": "https://mastodon.social/@{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["mastodon.social"]
+  },
+  "Clubhouse": {
+    "url_pattern": "https://www.clubhouse.com/@{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["clubhouse.com"]
+  },
+  "Quora": {
+    "url_pattern": "https://www.quora.com/profile/{username}",
+    "category": "forums",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["quora.com"]
+  },
+  "Academia": {
+    "url_pattern": "https://university.academia.edu/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["academia.edu"]
+  },
+  "ResearchGate": {
+    "url_pattern": "https://www.researchgate.net/profile/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["researchgate.net"]
+  },
+  "ORCID": {
+    "url_pattern": "https://orcid.org/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["orcid.org"]
+  },
+  "Kaggle": {
+    "url_pattern": "https://www.kaggle.com/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["kaggle.com"]
+  },
+  "HackerRank": {
+    "url_pattern": "https://www.hackerrank.com/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["hackerrank.com"]
+  },
+  "LeetCode": {
+    "url_pattern": "https://leetcode.com/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["leetcode.com"]
+  },
+  "Codewars": {
+    "url_pattern": "https://www.codewars.com/users/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["codewars.com"]
+  },
+  "FreeCodeCamp": {
+    "url_pattern": "https://www.freecodecamp.org/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["freecodecamp.org"]
+  },
+  "CodinGame": {
+    "url_pattern": "https://www.codingame.com/profile/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["codingame.com"]
+  },
+  "TopCoder": {
+    "url_pattern": "https://www.topcoder.com/members/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["topcoder.com"]
+  },
+  "Codeforces": {
+    "url_pattern": "https://codeforces.com/profile/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["codeforces.com"]
+  },
+  "AtCoder": {
+    "url_pattern": "https://atcoder.jp/users/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["atcoder.jp"]
+  },
+  "500px": {
+    "url_pattern": "https://500px.com/p/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["500px.com"]
+  },
+  "Unsplash": {
+    "url_pattern": "https://unsplash.com/@{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["unsplash.com"]
+  },
+  "Shutterstock": {
+    "url_pattern": "https://www.shutterstock.com/g/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["shutterstock.com"]
+  },
+  "Getty": {
+    "url_pattern": "https://www.gettyimages.com/photos/{username}",
+    "category": "creative",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["gettyimages.com"]
+  },
+  "ArtStation": {
+    "url_pattern": "https://www.artstation.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["artstation.com"]
+  },
+  "CGSociety": {
+    "url_pattern": "https://cgsociety.org/c/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["cgsociety.org"]
+  },
+  "Blender": {
+    "url_pattern": "https://www.blenderartists.org/u/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["blenderartists.org"]
+  },
+  "Figma": {
+    "url_pattern": "https://www.figma.com/@{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["figma.com"]
+  },
+  "Adobe": {
+    "url_pattern": "https://www.behance.net/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["adobe.com"]
+  },
+  "Canva": {
+    "url_pattern": "https://www.canva.com/{username}",
+    "category": "creative",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["canva.com"]
+  },
+  "Goodreads": {
+    "url_pattern": "https://www.goodreads.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["goodreads.com"]
+  },
+  "Wattpad": {
+    "url_pattern": "https://www.wattpad.com/user/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["wattpad.com"]
+  },
+  "Archive": {
+    "url_pattern": "https://archiveofourown.org/users/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["archiveofourown.org"]
+  },
+  "FanFiction": {
+    "url_pattern": "https://www.fanfiction.net/u/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["fanfiction.net"]
+  },
+  "IMDb": {
+    "url_pattern": "https://www.imdb.com/name/{username}",
+    "category": "creative",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["imdb.com"]
+  },
+  "Letterboxd": {
+    "url_pattern": "https://letterboxd.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["letterboxd.com"]
+  },
+  "MyAnimeList": {
+    "url_pattern": "https://myanimelist.net/profile/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["myanimelist.net"]
+  },
+  "Anilist": {
+    "url_pattern": "https://anilist.co/user/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["anilist.co"]
+  },
+  "FACEIT": {
+    "url_pattern": "https://www.faceit.com/en/players/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["faceit.com"]
+  },
+  "ESEA": {
+    "url_pattern": "https://play.esea.net/users/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["play.esea.net"]
+  },
+  "OpenSea": {
+    "url_pattern": "https://opensea.io/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["opensea.io"]
+  },
+  "SuperRare": {
+    "url_pattern": "https://superrare.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["superrare.com"]
+  },
+  "Foundation": {
+    "url_pattern": "https://foundation.app/@{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["foundation.app"]
+  },
+  "Rarible": {
+    "url_pattern": "https://rarible.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["rarible.com"]
+  },
+  "Coinbase": {
+    "url_pattern": "https://www.coinbase.com/{username}",
+    "category": "financial",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["coinbase.com"]
+  },
+  "Binance": {
+    "url_pattern": "https://www.binance.com/en/user/{username}",
+    "category": "financial",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["binance.com"]
+  },
+  "Robinhood": {
+    "url_pattern": "https://robinhood.com/us/en/account/{username}",
+    "category": "financial",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["robinhood.com"]
+  },
+  "Webull": {
+    "url_pattern": "https://www.webull.com/profile/{username}",
+    "category": "financial",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["webull.com"]
+  },
+  "Keybase": {
+    "url_pattern": "https://keybase.io/{username}",
+    "category": "developer",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["keybase.io"]
+  },
+  "Linktree": {
+    "url_pattern": "https://linktr.ee/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["linktr.ee"]
+  },
+  "Livejournal": {
+    "url_pattern": "https://{username}.livejournal.com/",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["livejournal.com"]
+  },
+  "Dreamwidth": {
+    "url_pattern": "https://{username}.dreamwidth.org/",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["dreamwidth.org"]
+  },
+  "Xing": {
+    "url_pattern": "https://www.xing.com/profile/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["xing.com"]
+  },
+  "VK": {
+    "url_pattern": "https://vk.com/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["vk.com"]
+  },
+  "Odnoklassniki": {
+    "url_pattern": "https://ok.ru/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["ok.ru"]
+  },
+  "Weibo": {
+    "url_pattern": "https://weibo.com/u/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["weibo.com"]
+  },
+  "WeChat": {
+    "url_pattern": "https://weixin.qq.com/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["weixin.qq.com"]
+  },
+  "QQ": {
+    "url_pattern": "https://user.qzone.qq.com/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["qzone.qq.com"]
+  },
+  "Douban": {
+    "url_pattern": "https://www.douban.com/people/{username}/",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["douban.com"]
+  },
+  "Bilibili": {
+    "url_pattern": "https://space.bilibili.com/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["bilibili.com"]
+  },
+  "Xiaohongshu": {
+    "url_pattern": "https://www.xiaohongshu.com/user/profile/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["xiaohongshu.com"]
+  },
+  "Zhihu": {
+    "url_pattern": "https://www.zhihu.com/people/{username}",
+    "category": "forums",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["zhihu.com"]
+  },
+  "Baidu": {
+    "url_pattern": "https://tieba.baidu.com/home/main?un={username}",
+    "category": "forums",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tieba.baidu.com"]
+  },
+  "Line": {
+    "url_pattern": "https://line.me/R/ti/p/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["line.me"]
+  },
+  "Mixi": {
+    "url_pattern": "https://mixi.jp/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["mixi.jp"]
+  },
+  "Pixiv": {
+    "url_pattern": "https://www.pixiv.net/users/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["pixiv.net"]
+  },
+  "Niconico": {
+    "url_pattern": "https://www.nicovideo.jp/user/{username}",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["nicovideo.jp"]
+  },
+  "Ameba": {
+    "url_pattern": "https://ameblo.jp/{username}/",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["ameblo.jp"]
+  },
+  "Hatena": {
+    "url_pattern": "https://profile.hatena.ne.jp/{username}/",
+    "category": "forums",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["hatena.ne.jp"]
+  },
+  "FC2": {
+    "url_pattern": "https://{username}.blog.fc2.com/",
+    "category": "forums",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["blog.fc2.com"]
+  },
+  "Naver": {
+    "url_pattern": "https://blog.naver.com/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["blog.naver.com"]
+  },
+  "KakaoTalk": {
+    "url_pattern": "https://open.kakao.com/o/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["open.kakao.com"]
+  },
+  "Daum": {
+    "url_pattern": "https://blog.daum.net/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["blog.daum.net"]
+  },
+  "Cyworld": {
+    "url_pattern": "https://www.cyworld.com/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["cyworld.com"]
+  },
+  "Badoo": {
+    "url_pattern": "https://badoo.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["badoo.com"]
+  },
+  "Bumble": {
+    "url_pattern": "https://bumble.com/app/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["bumble.com"]
+  },
+  "Tinder": {
+    "url_pattern": "https://tinder.com/@{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tinder.com"]
+  },
+  "Match": {
+    "url_pattern": "https://www.match.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["match.com"]
+  },
+  "PlentyOfFish": {
+    "url_pattern": "https://www.pof.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["pof.com"]
+  },
+  "eHarmony": {
+    "url_pattern": "https://www.eharmony.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["eharmony.com"]
+  },
+  "OkCupid": {
+    "url_pattern": "https://www.okcupid.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["okcupid.com"]
+  },
+  "Zoosk": {
+    "url_pattern": "https://www.zoosk.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["zoosk.com"]
+  },
+  "Coffee Meets Bagel": {
+    "url_pattern": "https://coffeemeetsbagel.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["coffeemeetsbagel.com"]
+  },
+  "Hinge": {
+    "url_pattern": "https://hinge.co/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["hinge.co"]
+  },
+  "Meetup": {
+    "url_pattern": "https://www.meetup.com/members/{username}/",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["meetup.com"]
+  },
+  "Eventbrite": {
+    "url_pattern": "https://www.eventbrite.com/o/{username}",
+    "category": "professional",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["eventbrite.com"]
+  },
+  "Facebook Events": {
+    "url_pattern": "https://www.facebook.com/events/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["facebook.com"]
+  },
+  "Nextdoor": {
+    "url_pattern": "https://nextdoor.com/profile/{username}",
+    "category": "social_media",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["nextdoor.com"]
+  },
+  "Foursquare": {
+    "url_pattern": "https://foursquare.com/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["foursquare.com"]
+  },
+  "Swarm": {
+    "url_pattern": "https://www.swarmapp.com/user/{username}",
+    "category": "social_media",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["swarmapp.com"]
+  },
+  "Yelp": {
+    "url_pattern": "https://www.yelp.com/user_details?userid={username}",
+    "category": "reviews",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["yelp.com"]
+  },
+  "TripAdvisor": {
+    "url_pattern": "https://www.tripadvisor.com/Profile/{username}",
+    "category": "reviews",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["tripadvisor.com"]
+  },
+  "Airbnb": {
+    "url_pattern": "https://www.airbnb.com/users/show/{username}",
+    "category": "marketplace",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["airbnb.com"]
+  },
+  "Uber": {
+    "url_pattern": "https://www.uber.com/profile/{username}",
+    "category": "transportation",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["uber.com"]
+  },
+  "Lyft": {
+    "url_pattern": "https://www.lyft.com/profile/{username}",
+    "category": "transportation",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["lyft.com"]
+  },
+  "DoorDash": {
+    "url_pattern": "https://www.doordash.com/consumer/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["doordash.com"]
+  },
+  "UberEats": {
+    "url_pattern": "https://www.ubereats.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["ubereats.com"]
+  },
+  "Grubhub": {
+    "url_pattern": "https://www.grubhub.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["grubhub.com"]
+  },
+  "Postmates": {
+    "url_pattern": "https://postmates.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["postmates.com"]
+  },
+  "Seamless": {
+    "url_pattern": "https://www.seamless.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["seamless.com"]
+  },
+  "Zomato": {
+    "url_pattern": "https://www.zomato.com/{username}",
+    "category": "food",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["zomato.com"]
+  },
+  "OpenTable": {
+    "url_pattern": "https://www.opentable.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["opentable.com"]
+  },
+  "Resy": {
+    "url_pattern": "https://resy.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["resy.com"]
+  },
+  "Foursquare City Guide": {
+    "url_pattern": "https://foursquare.com/city-guide/{username}",
+    "category": "reviews",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["foursquare.com"]
+  },
+  "Nike": {
+    "url_pattern": "https://www.nike.com/profile/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["nike.com"]
+  },
+  "Adidas": {
+    "url_pattern": "https://www.adidas.com/us/profile/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["adidas.com"]
+  },
+  "Strava": {
+    "url_pattern": "https://www.strava.com/athletes/{username}",
+    "category": "fitness",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["strava.com"]
+  },
+  "MyFitnessPal": {
+    "url_pattern": "https://www.myfitnesspal.com/profile/{username}",
+    "category": "fitness",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["myfitnesspal.com"]
+  },
+  "Fitbit": {
+    "url_pattern": "https://www.fitbit.com/user/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["fitbit.com"]
+  },
+  "Garmin": {
+    "url_pattern": "https://connect.garmin.com/modern/profile/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["connect.garmin.com"]
+  },
+  "Under Armour": {
+    "url_pattern": "https://www.mapmyfitness.com/profile/{username}",
+    "category": "fitness",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["mapmyfitness.com"]
+  },
+  "Peloton": {
+    "url_pattern": "https://members.onepeloton.com/profile/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["onepeloton.com"]
+  },
+  "ClassPass": {
+    "url_pattern": "https://classpass.com/profile/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["classpass.com"]
+  },
+  "SoulCycle": {
+    "url_pattern": "https://www.soul-cycle.com/profile/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["soul-cycle.com"]
+  },
+  "Coursera": {
+    "url_pattern": "https://www.coursera.org/user/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["coursera.org"]
+  },
+  "edX": {
+    "url_pattern": "https://www.edx.org/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["edx.org"]
+  },
+  "Udemy": {
+    "url_pattern": "https://www.udemy.com/user/{username}/",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["udemy.com"]
+  },
+  "Khan Academy": {
+    "url_pattern": "https://www.khanacademy.org/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["khanacademy.org"]
+  },
+  "Udacity": {
+    "url_pattern": "https://www.udacity.com/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["udacity.com"]
+  },
+  "Pluralsight": {
+    "url_pattern": "https://www.pluralsight.com/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["pluralsight.com"]
+  },
+  "Skillshare": {
+    "url_pattern": "https://www.skillshare.com/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["skillshare.com"]
+  },
+  "MasterClass": {
+    "url_pattern": "https://www.masterclass.com/profile/{username}",
+    "category": "education",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["masterclass.com"]
+  },
+  "LinkedIn Learning": {
+    "url_pattern": "https://www.linkedin.com/learning/profiles/{username}",
+    "category": "education",
+    "checker_type": "redirect",
+    "method": "GET",
+    "redirect_indicators": ["/login", "/signup"],
+    "domains": ["linkedin.com"]
+  },
+  "Treehouse": {
+    "url_pattern": "https://teamtreehouse.com/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["teamtreehouse.com"]
+  },
+  "Netflix": {
+    "url_pattern": "https://www.netflix.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["netflix.com"]
+  },
+  "Hulu": {
+    "url_pattern": "https://www.hulu.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["hulu.com"]
+  },
+  "Disney+": {
+    "url_pattern": "https://www.disneyplus.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["disneyplus.com"]
+  },
+  "HBO Max": {
+    "url_pattern": "https://www.hbomax.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["hbomax.com"]
+  },
+  "Amazon Prime": {
+    "url_pattern": "https://www.amazon.com/gp/video/profiles/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["amazon.com"]
+  },
+  "Apple TV+": {
+    "url_pattern": "https://tv.apple.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tv.apple.com"]
+  },
+  "Peacock": {
+    "url_pattern": "https://www.peacocktv.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["peacocktv.com"]
+  },
+  "Paramount+": {
+    "url_pattern": "https://www.paramountplus.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["paramountplus.com"]
+  },
+  "Twitch Prime": {
+    "url_pattern": "https://gaming.amazon.com/profile/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["gaming.amazon.com"]
+  },
+  "Origin": {
+    "url_pattern": "https://www.origin.com/profile/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["origin.com"]
+  },
+  "Uplay": {
+    "url_pattern": "https://club.ubisoft.com/profile/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["club.ubisoft.com"]
+  },
+  "Battle.net": {
+    "url_pattern": "https://worldofwarcraft.com/en-us/character/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["worldofwarcraft.com"]
+  },
+  "Riot Games": {
+    "url_pattern": "https://www.riotgames.com/profile/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["riotgames.com"]
+  },
+  "GOG": {
+    "url_pattern": "https://www.gog.com/user/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["gog.com"]
+  },
+  "itch.io": {
+    "url_pattern": "https://{username}.itch.io/",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["itch.io"]
+  },
+  "GameJolt": {
+    "url_pattern": "https://gamejolt.com/@{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["gamejolt.com"]
+  },
+  "Newgrounds": {
+    "url_pattern": "https://{username}.newgrounds.com/",
+    "category": "creative",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["newgrounds.com"]
+  },
+  "Netflix": {
+    "url_pattern": "https://www.netflix.com/browse/genre/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["netflix.com"]
+  },
+  "Hulu": {
+    "url_pattern": "https://www.hulu.com/profiles/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["hulu.com"]
+  },
+  "Disney+": {
+    "url_pattern": "https://www.disneyplus.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["disneyplus.com"]
+  },
+  "HBO Max": {
+    "url_pattern": "https://www.hbomax.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["hbomax.com"]
+  },
+  "Apple TV": {
+    "url_pattern": "https://tv.apple.com/profile/{username}",
+    "category": "entertainment",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tv.apple.com"]
+  },
+  "Roblox": {
+    "url_pattern": "https://www.roblox.com/users/profile?username={username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["roblox.com"]
+  },
+  "Minecraft": {
+    "url_pattern": "https://namemc.com/profile/{username}",
+    "category": "gaming",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["namemc.com"]
+  },
+  "Fortnite": {
+    "url_pattern": "https://fortnitetracker.com/profile/all/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["fortnitetracker.com"]
+  },
+  "VALORANT": {
+    "url_pattern": "https://tracker.gg/valorant/profile/riot/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tracker.gg"]
+  },
+  "CS:GO": {
+    "url_pattern": "https://steamcommunity.com/id/{username}/games/?tab=all",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["steamcommunity.com"]
+  },
+  "Apex Legends": {
+    "url_pattern": "https://apex.tracker.gg/apex/profile/origin/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tracker.gg"]
+  },
+  "Overwatch": {
+    "url_pattern": "https://playoverwatch.com/career/pc/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["playoverwatch.com"]
+  },
+  "Call of Duty": {
+    "url_pattern": "https://cod.tracker.gg/warzone/profile/battlenet/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tracker.gg"]
+  },
+  "League of Legends": {
+    "url_pattern": "https://www.op.gg/summoners/na/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["op.gg"]
+  },
+  "Dota 2": {
+    "url_pattern": "https://www.dotabuff.com/players/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["dotabuff.com"]
+  },
+  "Rocket League": {
+    "url_pattern": "https://rocketleague.tracker.gg/rl/profile/steam/{username}",
+    "category": "gaming",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tracker.gg"]
+  },
+  "Uber": {
+    "url_pattern": "https://www.uber.com/profile/{username}",
+    "category": "transportation",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["uber.com"]
+  },
+  "Lyft": {
+    "url_pattern": "https://www.lyft.com/profile/{username}",
+    "category": "transportation",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["lyft.com"]
+  },
+  "DoorDash": {
+    "url_pattern": "https://www.doordash.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["doordash.com"]
+  },
+  "Uber Eats": {
+    "url_pattern": "https://www.ubereats.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["ubereats.com"]
+  },
+  "Grubhub": {
+    "url_pattern": "https://www.grubhub.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["grubhub.com"]
+  },
+  "Postmates": {
+    "url_pattern": "https://postmates.com/profile/{username}",
+    "category": "food",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["postmates.com"]
+  },
+  "Airbnb": {
+    "url_pattern": "https://www.airbnb.com/users/show/{username}",
+    "category": "travel",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["airbnb.com"]
+  },
+  "Booking": {
+    "url_pattern": "https://www.booking.com/profile/{username}",
+    "category": "travel",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["booking.com"]
+  },
+  "Hotels": {
+    "url_pattern": "https://www.hotels.com/profile/{username}",
+    "category": "travel",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["hotels.com"]
+  },
+  "Expedia": {
+    "url_pattern": "https://www.expedia.com/profile/{username}",
+    "category": "travel",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["expedia.com"]
+  },
+  "TripAdvisor": {
+    "url_pattern": "https://www.tripadvisor.com/Profile/{username}",
+    "category": "travel",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["tripadvisor.com"]
+  },
+  "Bumble": {
+    "url_pattern": "https://bumble.com/app/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["bumble.com"]
+  },
+  "Tinder": {
+    "url_pattern": "https://tinder.com/@{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["tinder.com"]
+  },
+  "Hinge": {
+    "url_pattern": "https://hinge.co/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["hinge.co"]
+  },
+  "Match": {
+    "url_pattern": "https://www.match.com/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["match.com"]
+  },
+  "eHarmony": {
+    "url_pattern": "https://www.eharmony.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["eharmony.com"]
+  },
+  "Plenty of Fish": {
+    "url_pattern": "https://www.pof.com/viewprofile.aspx?profile_id={username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["pof.com"]
+  },
+  "OkCupid": {
+    "url_pattern": "https://www.okcupid.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["okcupid.com"]
+  },
+  "Zoosk": {
+    "url_pattern": "https://www.zoosk.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["zoosk.com"]
+  },
+  "Coffee Meets Bagel": {
+    "url_pattern": "https://coffeemeetsbagel.com/profile/{username}",
+    "category": "dating",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["coffeemeetsbagel.com"]
+  },
+  "Coursera": {
+    "url_pattern": "https://www.coursera.org/user/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["coursera.org"]
+  },
+  "edX": {
+    "url_pattern": "https://www.edx.org/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["edx.org"]
+  },
+  "Udemy": {
+    "url_pattern": "https://www.udemy.com/user/{username}/",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["udemy.com"]
+  },
+  "Khan Academy": {
+    "url_pattern": "https://www.khanacademy.org/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["khanacademy.org"]
+  },
+  "Skillshare": {
+    "url_pattern": "https://www.skillshare.com/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["skillshare.com"]
+  },
+  "MasterClass": {
+    "url_pattern": "https://www.masterclass.com/classes/{username}",
+    "category": "education",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["masterclass.com"]
+  },
+  "Udacity": {
+    "url_pattern": "https://www.udacity.com/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["udacity.com"]
+  },
+  "Pluralsight": {
+    "url_pattern": "https://www.pluralsight.com/profile/{username}",
+    "category": "education",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["pluralsight.com"]
+  },
+  "MyFitnessPal": {
+    "url_pattern": "https://www.myfitnesspal.com/profile/{username}",
+    "category": "fitness",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["myfitnesspal.com"]
+  },
+  "Strava": {
+    "url_pattern": "https://www.strava.com/athletes/{username}",
+    "category": "fitness",
+    "checker_type": "standard",
+    "method": "GET",
+    "domains": ["strava.com"]
+  },
+  "Fitbit": {
+    "url_pattern": "https://www.fitbit.com/user/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["fitbit.com"]
+  },
+  "Nike Run Club": {
+    "url_pattern": "https://www.nike.com/nrc/profile/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["nike.com"]
+  },
+  "Peloton": {
+    "url_pattern": "https://members.onepeloton.com/members/{username}",
+    "category": "fitness",
+    "checker_type": "profile",
+    "method": "GET",
+    "domains": ["onepeloton.com"]
+  }
+}
