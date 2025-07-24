@@ -1,7 +1,7 @@
 # UsernameTracker
 
 Over 209 Websites
-designed with Colorma and some feuture 
+designed with Colorma and some features
 
 
 
